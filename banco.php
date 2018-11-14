@@ -1,5 +1,5 @@
 <?php
-//CONFIG HOSPEDAGEM
+//CONFIG HOSPEDAGEM 000
 /*
 $bdServidor = 'localhost';
 $bdUsuario = 'id7437604_root';
@@ -20,19 +20,6 @@ if (mysqli_connect_errno($conexao)) {
     echo "Problemas para conectar no banco. Verifique os dados!";
     die();
 }
-
-
-/*
-function buscar_solicitante($conexao) {
-    $sqlBusca = 'SELECT * FROM solicitante';
-    $resultado = mysqli_query($conexao, $sqlBusca);
-    $solicitantes = array();
-    while ($solicitante = mysqli_fetch_assoc($resultado)) {
-        $solicitantes[] = $solicitante;
-    }
-    return $solicitantes;
-}
-*/
 
 
 function gravar_solicitante($conexao, $solicitante) {
