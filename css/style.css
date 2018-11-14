@@ -1,0 +1,47 @@
+.navbar{
+	background-color: #2ecc71;
+}
+
+.logo{
+	max-width:120px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
+
+.titulo{
+	padding-left: 50px;
+	color: white;
+}
+
+.sair{
+	float: right;
+
+	margin-top: -30px;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{color: black;}
+
+
+#topo{
+	margin-bottom: 30px; 
+}
+
+.botao{
+	margin-top: 20px;
+}
+
+.form{
+	margin-top: 60px;
+}
+
+#topo{
+	background-image: linear-gradient(rgb(106, 136, 148), rgb(12, 119, 33)
+}
+

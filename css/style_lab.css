@@ -1,0 +1,70 @@
+body{
+	background-color: #f8f8f8;
+}
+/*----------------------CABEÇALHO------------------------*/
+.navbar-default{
+	background-color: #2ecc71;
+}
+
+.logo{
+	max-width:120px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
+
+.titulo{
+	padding-left: 50px;
+	color: white;
+}
+
+.sair{
+	float: right;
+
+	margin-top: -30px;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{color: black;}
+
+/*-------------------------------------------------------*/
+
+h2{
+	margin: 20px;
+	margin-bottom: 30px; 
+}
+
+.aviso{
+	margin-top: 160px;
+	background-color: rgba(69, 204, 51, 0.4);
+	
+}
+
+.aviso p{
+	font-size: 20px;
+}
+
+.select{
+	height: 30px;
+}
+
+
+#formulario{
+	margin-top: 70px;
+}
+
+.botao{
+	margin-top: 20px;
+
+}
+
+.botao2{
+	margin: 20px 20px;
+	
+}
+

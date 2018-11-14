@@ -1,0 +1,51 @@
+html,body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+.hero.is-success {
+  background-image: linear-gradient(rgb(106, 136, 148), rgb(12, 119, 33));
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+
+.titulo{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+	font-family: sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img{
+	margin-top: 100px;
+	border-radius: 8px;
+	max-width:150px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+
+}
+
+.login{
+	margin: 20px;
+	margin-bottom: 25px;
+	font-size: 20px;
+
+}
+
+.container{
+	height: 380px;
+}
+
+.cadastrar{
+	font-size: 20px;
+}
