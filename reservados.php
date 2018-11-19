@@ -91,6 +91,15 @@
     			</tbody>
     		</table>
     	</div>
+
+    	<?php
+    	if ($_SESSION['apagado'] == true) {
+                    echo "<script> alert('Reserva cancelada com sucesso.'); </script>";
+                    $_SESSION['apagado'] = false;
+                    //print_r($_SESSION);
+                }
+
+        ?>
     </body>
 
 </html>
