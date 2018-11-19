@@ -80,7 +80,10 @@
 
 	    						<td>
 	    							<?php echo $data['horaFin']; ?>
-	    						</td> 						    						
+	    						</td> 						    			
+	    						<td>
+	    						<?php echo "<a href='apaga_reserva.php'> <img src='img/ico_excluir.gif'></a>" ?>	
+	    						</td>			
 
     					<?php }
     					?>
