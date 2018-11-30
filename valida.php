@@ -15,6 +15,7 @@ if (!empty($_POST['optionLab']) && !empty($_POST['data']) && !empty($_POST['hora
 
 		if (isset($_POST['data'])) {
 	        $solicitante['data'] = $_POST['data'];
+	        $_SESSION['data_reserva'] =  $_POST['data'];
 	    } else {
 	        $solicitante['data'] = '';
 	    }

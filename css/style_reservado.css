@@ -35,3 +35,9 @@ a:hover{color: black;}
 .tabela{
 	padding-top: 50px;
 }
+
+.btn_apagar{
+	padding-top: 20px;
+	display: flex;
+	float: right;
+}

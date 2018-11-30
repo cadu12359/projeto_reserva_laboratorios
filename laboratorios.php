@@ -1,5 +1,6 @@
 <?php
 session_start();
+setlocale(LC_ALL, 'pt_BR');
 
 if(!isset($_SESSION['usuario'])) {
     header('Location: index.php');
@@ -104,7 +105,7 @@ $i = 1;
 
                     <div class="form-group">
                         <label>Selecione a data que deseja reservar o laboratório.</label>
-                        <input type="date" name="data" class="form-control" id="data" min="2018-10-29" max="2018-11-29">
+                        <input type="date" name="data" class="form-control" id="data" min="2018-11-30" max="2018-12-31">
                     </div>
 
                     <div class="form-group col-md-3">
