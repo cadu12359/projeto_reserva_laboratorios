@@ -53,11 +53,11 @@
     				
     					<?php 
     					include "banco.php";
-    					$sqlBuscaReservaData = "SELECT res.data, res.horaIni, res.horaFin, usu.nome, lab.lab_nome FROM reserva res, usuario usu, laboratorio lab
+    					$sqlBuscaReservaData = "SELECT DATE_FORMAT(res.data, '%d/%m/%Y') AS data, res.horaIni, res.horaFin, usu.nome, lab.lab_nome FROM reserva res, usuario usu, laboratorio lab
 						WHERE (res.fk_usuario = usu.id)
 						AND (res.fk_laboratorio = lab.id)
 						AND (usu.email = '{$_SESSION['usuario']}')
-						AND (res.data > {date ('2018-11-27')})
+						/*AND (res.data < {date ('2018-11-27')})*/
 						ORDER BY res.data DESC";
 						
 						$resultadoData = mysqli_query($conexao, $sqlBuscaReservaData);
@@ -83,15 +83,7 @@
 	    						<td>
 	    							<?php echo $data['horaFin']; ?>
 	    						</td> 						    			
-	    						<td>
-                                    <button type="submit" class='btnExcluir' >
-
-    	    						<!--
-    	    						<?php echo "<a href='apaga_reserva.php'> <img src='img/ico_excluir.gif'></a>" ?>
-    								-->
-    	    							<img src="img/ico_excluir.gif">
-    	    						</button>	
-	    						</td>			
+	    							
 
     					<?php }
     					?>
@@ -105,12 +97,13 @@
     	
 
     	<?php
+        //print_r($_SESSION);
     	if ($_SESSION['apagado'] == true) {
                     echo "<script> alert('Reserva cancelada com sucesso.'); </script>";
                     $_SESSION['apagado'] = false;
                     
                 }
-               print_r($_SESSION); 
+               //print_r($_SESSION); 
         ?>
     </body>
 
